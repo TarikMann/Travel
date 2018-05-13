@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
-			http://www.springframework.org/schema/beans/spring-beans.xsd">
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+	        http://www.springframework.org/schema/context
+	        http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="voyages" class="fr.tarik.Voyage">
+	<bean id="voyage" class="fr.tarik.domaine.Voyage">
 
 		<constructor-arg type="Integer" value="1" />
 		<constructor-arg type="String" value="Vacances" />
@@ -13,8 +15,9 @@
 		<constructor-arg type="String" value="03/07/2018" />
 		<constructor-arg type="String" value="18/07/2018" />
 
+
 	</bean>
-	
+
 	<!-- Bean de configuration Spring : Objet permettant de resoudre les noms 
 		de vues (ModelAndView) en page JSP -->
 	<bean id="viewResolver"
@@ -23,7 +26,7 @@
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 		<property name="viewClass"
-			value="org.springframework.web.servlet.view.jstlView" />
+			value="org.springframework.web.servlet.view.JstlView" />
 
 	</bean>
 </beans>

@@ -77,9 +77,4 @@ public class Voyage {
 	// To String()
 	
 
-	public String toString() {
-	
-		return super.toString();
-	}
-
 }

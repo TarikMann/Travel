@@ -22,7 +22,7 @@ public class IndexController {
 
 		final List<Voyage> voyages = new ArrayList<>();
 		voyages.add(this.leVoyage);
-		monModelAndView.getModel().put("articles", voyages);
+		monModelAndView.getModel().put("voyages", voyages);
 
 		return monModelAndView;
 	}

@@ -26,12 +26,6 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.2.3</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -64,7 +58,7 @@
 	</dependencies>
 	<build>
 
-		<finalName>SpringBlog</finalName>
+		<finalName>TravelGestion</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
