@@ -10,11 +10,11 @@
 </head>
 <body>
 	<h1>Liste des voyages</h1>
-<%-- 	<c:forEach items="${ voyages }" var="voyage"> --%>
-<%-- 		<div title="${voyage.idVoyage }"> --%>
-<%-- 			<h2>${voyage.typeVoyage }</h2> --%>
-<%-- 			<p>${voyage.description }</p> --%>
-<!-- 		</div> -->
-<%-- 	</c:forEach> --%>
+	<c:forEach items="${ voyages }" var="voyage">
+		<div title="${voyage.idVoyage }">
+			<h2>${voyage.typeVoyage }</h2>
+			<p>${voyage.description }</p>
+		</div>
+	</c:forEach>
 </body>
 </html>

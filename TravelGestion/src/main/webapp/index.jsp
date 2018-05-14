@@ -9,7 +9,7 @@
 </head>
 <body>
 	Hello
-	<c:redirect url="/welcome.tarik" />
+	<c:redirect url="/welcome.html" />
 
 </body>
 </html>
