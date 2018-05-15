@@ -22,6 +22,16 @@
 
 
 	</bean>
+	
+		<bean id="bagage" class="fr.tarik.domaine.Bagage">
+
+		<constructor-arg type="Integer" value="1" />
+		<constructor-arg type="Integer" value="2" />
+		<constructor-arg type="String" value="Chemises" />
+		<constructor-arg type="Integer" value="1" />
+
+
+	</bean>
 
 	<!-- Bean de configuration Spring : Objet permettant de resoudre les noms 
 		de vues (ModelAndView) en page JSP -->
